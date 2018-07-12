@@ -15,14 +15,14 @@
                  [cheshire "5.8.0"]
                  [ring-cors "0.1.11"]
                  [ring/ring-json "0.4.0"]
-                 [compojure "1.6.0"]]
+                 [compojure "1.6.1"]]
   :plugins [[lein-ring "0.9.7"]]
   :ring {:handler healthworkers-server.core/app}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring/ring-mock "0.3.2"]]}}
 
-  ;; :main ^:skip-aot healthworkers-server.core
+  :main ^:skip-aot healthworkers-server.core
   ;; :target-path "target/%s"
   ;; :profiles {:uberjar {:aot :all}}
   )
